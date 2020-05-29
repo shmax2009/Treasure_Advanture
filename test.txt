@@ -1,0 +1,48 @@
+#include <iostream>
+#include <vector>
+#include <SFML/Graphics.hpp>
+using namespace std;
+using namespace sf;
+class one_tasck
+{
+public:
+    string text;
+    string answer;
+    void add(string text_, string answer_)
+    {
+        text = text_;
+        answer = answer_;
+    }
+    void print_task(int index)
+    {
+        cout << ++index << ") " << text << endl;
+    }
+};
+class task
+{
+private:
+    vector<one_tasck> tasks;
+
+public:
+    void add(string text, string answer)
+    {
+        one_tasck t;
+        t.add(text, answer);
+        tasks.push_back(t);
+    }
+    bool check(int index, string answer)
+    {
+        return tasks[index].answer == answer;
+    }
+    void print()
+    {
+        for (int i = 0; i < tasks.size(); i++)
+        {
+            tasks[i].print_task(i);
+        }
+    }
+};
+String to_rusian(string &stri)
+{
+return sf::String::fromUtf8(begin(stri),end(stri));
+}
