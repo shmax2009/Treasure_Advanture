@@ -1,8 +1,13 @@
 #include <iostream>
 #include <vector>
 #include <SFML/Graphics.hpp>
+
 using namespace std;
 using namespace sf;
+
+//hello
+//First commit by *&^-=0-("")><--Michael Bolshakov--><()""-=0-^&*
+
 String to_rusian(string stri)
 {
     return sf::String::fromUtf8(begin(stri), end(stri));
