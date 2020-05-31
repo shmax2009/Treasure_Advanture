@@ -3,7 +3,7 @@
 #include <SFML/Graphics.hpp>
 using namespace std;
 using namespace sf;
-// gimp 20 20
+// ggimp 20 20
 String to_rusian(string stri)
 {
     return sf::String::fromUtf8(begin(stri), end(stri));
