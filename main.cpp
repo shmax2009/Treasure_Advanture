@@ -139,7 +139,7 @@ int main()
     Cursor.setTexture(Cursor_texture);
     aplication app[2];
     app[0].aplication_("./app1.png");
-
+// dfg
     while (window.isOpen())
     {
         Vector2i pixelPos = Mouse::getPosition(window);
