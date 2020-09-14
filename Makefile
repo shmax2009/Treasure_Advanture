@@ -16,6 +16,7 @@ Test: *.o
 clean:
 	@echo "** Removing object files and executable..."
 	rm -f Test
+	rm -f *.o
 
 install:
 	@echo '** Installing...
